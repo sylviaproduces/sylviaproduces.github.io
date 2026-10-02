@@ -44,7 +44,7 @@ function chrome() {
   if (footer) footer.innerHTML = `
     <div class="footer__orbit" aria-hidden="true"><span>LET’S WORK TOGETHER · LET’S WORK TOGETHER · </span></div>
     <div class="footer__grid">
-      <div><p class="eyebrow">Available for</p><p class="footer__availability">Select production & operations collaborations.</p></div>
+      <div><p class="eyebrow">Available for</p><p class="footer__availability">Production & operations.</p></div>
       <div><p class="eyebrow">Based in</p><p>${site.location}</p></div>
       <div><p class="eyebrow">Find Sylvia</p><div class="footer__links">${site.social.map((item) => `<a href="${item.href}" target="${item.href.startsWith("http") ? "_blank" : "_self"}" rel="noreferrer">${item.label} ↗</a>`).join("")}</div></div>
     </div>
