@@ -43,28 +43,28 @@ export const projects = [
 
 export const caseStudies = [
   {
-    slug: "technology-operations-microsoft",
-    path: "case-studies/technology-operations-microsoft/",
-    title: "Technology Operations @ Microsoft",
-    shortTitle: "Microsoft ops",
-    eyebrow: "Technology operations · enterprise scale",
-    summary: "Bringing clarity, cadence, and cross-functional care to a high-velocity technology operations practice.",
-    year: "2024–2026",
-    role: "Operations Producer",
-    tags: ["Program ops", "Systems", "Stakeholders"],
-    media: { type: "art", theme: "microsoft", label: "Lavender and blue operations dashboard collage" },
-    intro: "This placeholder case study shows how Sylvia translates complex operational work into shared routines that are human, measurable, and easy to sustain.",
+    slug: "media-operations-disney",
+    path: "case-studies/media-operations-disney/",
+    title: "Media Operations @ Disney",
+    shortTitle: "Disney media ops",
+    eyebrow: "Media operations · creative delivery",
+    summary: "A flexible operational model for keeping creative delivery, partners, and visibility aligned.",
+    year: "2022–2024",
+    role: "Media Operations",
+    tags: ["Media", "Delivery", "Partners"],
+    media: { type: "art", theme: "disney", label: "Sky blue and coral media delivery collage" },
+    intro: "This placeholder case study captures how Sylvia brings producer-style care to media operations: clear intake, shared language, calm handoffs, and an eye on the audience waiting at the other end.",
     facts: [
-      ["Scope", "Cross-functional operating rhythm"],
-      ["Focus", "Decision velocity & documentation"],
-      ["Format", "Enterprise program operations"]
+      ["Scope", "Media delivery operations"],
+      ["Focus", "Handoffs, visibility & partners"],
+      ["Format", "Creative operations"]
     ],
     sections: [
-      { heading: "Context", body: "Teams need room to move quickly without losing the decisions, dependencies, and follow-through that make collaboration dependable. The challenge was to create a clear operating rhythm without piling on process." },
-      { heading: "Approach", body: "I mapped recurring moments, named lightweight owners, designed shareable decision logs, and turned updates into concise visual artifacts. Each change was introduced as a prototype, then tuned with the people closest to the work." },
-      { heading: "Result", body: "Placeholder for approved outcomes: add measurable operating improvements, a before-and-after workflow, or a link to a presentation once it is cleared for publication." }
+      { heading: "Context", body: "Creative work often moves through many hands. The operational challenge is to make progress visible without reducing good work to a status spreadsheet." },
+      { heading: "Approach", body: "I designed a friendly intake language, surfaced critical dependencies early, and used concise progress rituals to keep internal teams and external partners oriented around the same delivery picture." },
+      { heading: "Result", body: "Placeholder for approved results: add project types, service-level improvements, process diagrams, or a public-facing reflection on media delivery work." }
     ],
-    outcomes: ["Weekly operating rhythm", "Decision and dependency tracking", "Reusable briefing templates"]
+    outcomes: ["Clear creative intake", "Partner-facing delivery signals", "Exception-aware handoff process"]
   },
   {
     slug: "feature-film-the-score",
@@ -91,28 +91,28 @@ export const caseStudies = [
     outcomes: ["Story-to-production map", "Department planning packets", "Milestone-driven pre-production cadence"]
   },
   {
-    slug: "media-operations-disney",
-    path: "case-studies/media-operations-disney/",
-    title: "Media Operations @ Disney",
-    shortTitle: "Disney media ops",
-    eyebrow: "Media operations · creative delivery",
-    summary: "A flexible operational model for keeping creative delivery, partners, and visibility aligned.",
-    year: "2022–2024",
-    role: "Media Operations",
-    tags: ["Media", "Delivery", "Partners"],
-    media: { type: "art", theme: "disney", label: "Sky blue and coral media delivery collage" },
-    intro: "This placeholder case study captures how Sylvia brings producer-style care to media operations: clear intake, shared language, calm handoffs, and an eye on the audience waiting at the other end.",
+    slug: "technology-operations-microsoft",
+    path: "case-studies/technology-operations-microsoft/",
+    title: "Technology Operations @ Microsoft",
+    shortTitle: "Microsoft ops",
+    eyebrow: "Technology operations · enterprise scale",
+    summary: "Bringing clarity, cadence, and cross-functional care to a high-velocity technology operations practice.",
+    year: "2024–2026",
+    role: "Operations Producer",
+    tags: ["Program ops", "Systems", "Stakeholders"],
+    media: { type: "art", theme: "microsoft", label: "Lavender and blue operations dashboard collage" },
+    intro: "This placeholder case study shows how Sylvia translates complex operational work into shared routines that are human, measurable, and easy to sustain.",
     facts: [
-      ["Scope", "Media delivery operations"],
-      ["Focus", "Handoffs, visibility & partners"],
-      ["Format", "Creative operations"]
+      ["Scope", "Cross-functional operating rhythm"],
+      ["Focus", "Decision velocity & documentation"],
+      ["Format", "Enterprise program operations"]
     ],
     sections: [
-      { heading: "Context", body: "Creative work often moves through many hands. The operational challenge is to make progress visible without reducing good work to a status spreadsheet." },
-      { heading: "Approach", body: "I designed a friendly intake language, surfaced critical dependencies early, and used concise progress rituals to keep internal teams and external partners oriented around the same delivery picture." },
-      { heading: "Result", body: "Placeholder for approved results: add project types, service-level improvements, process diagrams, or a public-facing reflection on media delivery work." }
+      { heading: "Context", body: "Teams need room to move quickly without losing the decisions, dependencies, and follow-through that make collaboration dependable. The challenge was to create a clear operating rhythm without piling on process." },
+      { heading: "Approach", body: "I mapped recurring moments, named lightweight owners, designed shareable decision logs, and turned updates into concise visual artifacts. Each change was introduced as a prototype, then tuned with the people closest to the work." },
+      { heading: "Result", body: "Placeholder for approved outcomes: add measurable operating improvements, a before-and-after workflow, or a link to a presentation once it is cleared for publication." }
     ],
-    outcomes: ["Clear creative intake", "Partner-facing delivery signals", "Exception-aware handoff process"]
+    outcomes: ["Weekly operating rhythm", "Decision and dependency tracking", "Reusable briefing templates"]
   }
 ];
 
