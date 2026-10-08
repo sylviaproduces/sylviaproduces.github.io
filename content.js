@@ -20,6 +20,19 @@ export const site = {
   ]
 };
 
+// About-page photo gallery: replace each placeholder SVG with an image of your choice,
+// then update the corresponding `src` extension and descriptive `alt` text below.
+export const aboutGallery = [
+  { src: "assets/images/about-gallery/photo-01.svg", alt: "Gallery placeholder 01 — replace with a production or personal photograph", label: "Image 01" },
+  { src: "assets/images/about-gallery/photo-02.svg", alt: "Gallery placeholder 02 — replace with a production or personal photograph", label: "Image 02" },
+  { src: "assets/images/about-gallery/photo-03.svg", alt: "Gallery placeholder 03 — replace with a production or personal photograph", label: "Image 03" },
+  { src: "assets/images/about-gallery/photo-04.svg", alt: "Gallery placeholder 04 — replace with a production or personal photograph", label: "Image 04" },
+  { src: "assets/images/about-gallery/photo-05.svg", alt: "Gallery placeholder 05 — replace with a production or personal photograph", label: "Image 05" },
+  { src: "assets/images/about-gallery/photo-06.svg", alt: "Gallery placeholder 06 — replace with a production or personal photograph", label: "Image 06" },
+  { src: "assets/images/about-gallery/photo-07.svg", alt: "Gallery placeholder 07 — replace with a production or personal photograph", label: "Image 07" },
+  { src: "assets/images/about-gallery/photo-08.svg", alt: "Gallery placeholder 08 — replace with a production or personal photograph", label: "Image 08" }
+];
+
 export const projects = [
   {
     slug: "the-score",

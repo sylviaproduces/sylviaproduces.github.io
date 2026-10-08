@@ -79,7 +79,11 @@ Only paste embed code from sources you trust. It is inserted directly into the p
 
 The default editorial artboards are CSS artwork, not stock imagery. Replace them at any time with the image/GIF/embed objects above. The home and About-page SVG illustrations live in `assets/images/` and can also be swapped.
 
-The supplied Sylvia portrait is saved at `assets/images/sylvia.webp` and is selected as the current homepage hero media in `content.js`.
+The supplied Sylvia portrait is saved at `assets/images/sylvia.webp` and is selected as the current homepage hero media in `content.js`. The About-page header pairs that portrait with `assets/images/about-collage.svg`; replace the second artwork file when a second approved photo is available.
+
+### Update the About-page photo gallery
+
+The About page includes eight editable gallery slots. Replace the files in `assets/images/about-gallery/` with your images and update the matching `src` and `alt` fields in `aboutGallery` inside `content.js`. The gallery is static for GitHub Pages: image changes are made by replacing the files in the repository, not by a public-facing upload form.
 
 ## File map
 

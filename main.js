@@ -1,4 +1,4 @@
-import { site, projects, caseStudies, posts, findBySlug, featuredCases, featuredPosts } from "./content.js";
+import { site, aboutGallery, projects, caseStudies, posts, findBySlug, featuredCases, featuredPosts } from "./content.js";
 
 const body = document.body;
 const base = body.dataset.base || "";
@@ -73,6 +73,12 @@ function renderCollections() {
   if (postGrid) postGrid.innerHTML = (body.dataset.limit === "all" ? posts : featuredPosts()).map((item) => card(item, "article")).join("");
 }
 
+function renderAboutGallery() {
+  const gallery = document.querySelector("[data-about-gallery]");
+  if (!gallery) return;
+  gallery.innerHTML = aboutGallery.map((item, index) => `<figure class="about-gallery__item about-gallery__item--${index + 1}"><img src="${escapeHtml(route(item.src))}" alt="${escapeHtml(item.alt)}" loading="lazy"><figcaption>${escapeHtml(item.label)}</figcaption></figure>`).join("");
+}
+
 function factList(facts = []) {
   return `<dl class="facts">${facts.map(([term, value]) => `<div><dt>${escapeHtml(term)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>`;
 }
@@ -134,6 +140,7 @@ function setupHeroMedia() {
 chrome();
 setupHeroMedia();
 renderCollections();
+renderAboutGallery();
 renderDetail();
 setupMenu();
 setupReveals();
