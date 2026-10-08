@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title-04">
+  <title id="title-04">Replace with gallery image 04</title>
+  <rect width="800" height="1000" fill="#D9D2FF"/>
+  <path d="M80 160H720M80 840H720" stroke="#08155A" stroke-opacity=".28" stroke-width="3"/>
+  <circle cx="400" cy="500" r="164" fill="none" stroke="#08155A" stroke-opacity=".42" stroke-width="3"/>
+  <path d="M400 285V715M185 500H615" stroke="#08155A" stroke-opacity=".24" stroke-width="3"/>
+  <text x="80" y="120" fill="#08155A" font-family="Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="4">SYLVIA PRODUCES</text>
+  <text x="400" y="515" fill="#08155A" font-family="Arial, sans-serif" font-size="88" font-weight="700" text-anchor="middle">04</text>
+  <text x="400" y="575" fill="#08155A" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="3" text-anchor="middle">ADD PHOTO</text>
+  <text x="80" y="895" fill="#08155A" font-family="Arial, sans-serif" font-size="21" letter-spacing="2">ABOUT GALLERY SLOT</text>
+</svg>

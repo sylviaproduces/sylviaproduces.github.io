@@ -1,0 +1,40 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "Home"
+    },
+    {
+      "path": "/about.html",
+      "title": "About"
+    },
+    {
+      "path": "/projects/the-score/",
+      "title": "The Score"
+    },
+    {
+      "path": "/case-studies/media-operations-disney/",
+      "title": "Media Operations @ Disney"
+    },
+    {
+      "path": "/case-studies/feature-film-the-score/",
+      "title": "Feature Film Production – The Score"
+    },
+    {
+      "path": "/case-studies/technology-operations-microsoft/",
+      "title": "Technology Operations @ Microsoft"
+    },
+    {
+      "path": "/blog/the-producers-technical-toolkit/",
+      "title": "The producer’s technical toolkit is mostly about trust"
+    },
+    {
+      "path": "/blog/how-i-plan-for-creative-change/",
+      "title": "How I plan for creative change without freezing the work"
+    },
+    {
+      "path": "/blog/building-calm-into-the-call-sheet/",
+      "title": "Building calm into the call sheet"
+    }
+  ]
+}

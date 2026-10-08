@@ -1,0 +1,13 @@
+# Local preview helper — intentionally excluded from the GitHub Pages repository.
+/package.json
+/package-lock.json
+/node_modules/
+
+# Generated delivery bundles.
+/release/
+
+# Operating-system metadata.
+.DS_Store
+
+# Manus files
+/manus-routes.json

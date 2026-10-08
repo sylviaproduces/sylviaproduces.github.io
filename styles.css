@@ -84,7 +84,7 @@ body[data-page="home"] .hero__eyebrow span { color: #a3ad48; font-size: 1rem; li
 body[data-page="home"] .hero h1 { max-width: 10.7ch; font-family: var(--sans); font-size: clamp(3.85rem, 6.7vw, 7.9rem); font-weight: 430; line-height: .88; letter-spacing: -.083em; text-wrap: balance; }
 body[data-page="home"] .hero h1 span { display: block; color: inherit; }
 body[data-page="home"] .hero__subtitle { max-width: 31rem; margin-top: clamp(1.65rem, 3vw, 2.7rem); padding-left: 1rem; border-left: 2px solid #a3ad48; font-size: clamp(1rem, 1.35vw, 1.22rem); font-weight: 470; line-height: 1.4; }
-body[data-page="home"] .hero__portrait-stack { position: relative; z-index: 3; display: block; grid-column: 2; justify-self: end; width: min(100%, 360px); margin: 0; }
+body[data-page="home"] .hero__portrait-stack { position: relative; z-index: 3; display: block; grid-column: 2; width: min(100%, 360px); margin: 0; }
 body[data-page="home"] .hero__art { position: relative; width: 100%; min-height: 0; aspect-ratio: 1767 / 2048; }
 body[data-page="home"] .hero__art::before { position: absolute; z-index: -1; top: .85rem; right: -.85rem; display: block; width: 100%; height: 100%; border: var(--border); content: ''; background: #e6ec9c; transform: none; }
 body[data-page="home"] .hero__art .media-image { position: static; width: 100%; height: 100%; min-height: 0; margin: 0; overflow: hidden; border: var(--border); background: #fff; transform: none; }
@@ -135,14 +135,18 @@ body[data-page="home"] .site-footer .footer__grid { grid-template-columns: 1.4fr
 body[data-page="about"] { color: #08155a; background: #fff; }
 body[data-page="about"] .site-header { border-bottom: 0; background: #fff; }
 .about-page { background: #fff; }
-.about-nameplate { display: grid; grid-template-columns: minmax(0, 1fr) minmax(210px, .28fr); column-gap: clamp(2rem, 8vw, 10rem); align-items: start; min-height: clamp(420px, 48vw, 620px); padding: clamp(3.5rem, 8vw, 8rem) var(--pad) clamp(3.8rem, 8vw, 8.5rem); }
+.about-nameplate { display: grid; grid-template-columns: minmax(0, 1fr) minmax(330px, .58fr); column-gap: clamp(2rem, 7vw, 8rem); align-items: start; min-height: clamp(460px, 50vw, 680px); padding: clamp(3.5rem, 8vw, 8rem) var(--pad) clamp(3.8rem, 8vw, 8.5rem); }
 .about-nameplate__title { max-width: 48rem; }
 .about-nameplate .eyebrow { margin-bottom: clamp(1rem, 2vw, 1.8rem); color: #4a5a86; }
-.about-nameplate h1 { margin: 0; font: 430 clamp(4.2rem, 8vw, 9rem)/.84 var(--sans); letter-spacing: -.085em; }
+.about-nameplate h1 { margin: 0; font: 430 clamp(4.2rem, 8vw, 9rem)/.84 var(--sans); letter-spacing: -.05em; }
 .about-nameplate__descriptor { margin: clamp(1.2rem, 2.4vw, 2.25rem) 0 0; color: #4a5a86; font-size: clamp(.84rem, 1.25vw, 1.1rem); font-weight: 560; }
-.about-nameplate__portrait { position: relative; justify-self: end; width: min(100%, 280px); margin: clamp(1rem, 4vw, 4.2rem) 0 0; aspect-ratio: 1767 / 2048; overflow: hidden; border: var(--border); background: var(--paper); }
+.about-nameplate__media { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; align-self: end; gap: clamp(.7rem, 1.5vw, 1.25rem); justify-self: end; width: min(100%, 540px); margin: clamp(1rem, 4vw, 4.2rem) 0 0; }
+.about-nameplate__portrait { position: relative; width: 100%; margin: 0; aspect-ratio: 1767 / 2048; overflow: hidden; border: var(--border); background: var(--paper); }
 .about-nameplate__portrait::before { position: absolute; z-index: -1; top: .7rem; right: -.7rem; width: 100%; height: 100%; border: var(--border); content: ''; background: #e6ec9c; }
 .about-nameplate__portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.about-nameplate__portrait--primary { margin-top: clamp(2rem, 5vw, 5rem); }
+.about-nameplate__portrait--secondary { aspect-ratio: 1000 / 1100; background: #f7f2ea; }
+.about-nameplate__portrait--secondary::before { background: #b8dff0; }
 .about-introduction,
 .about-record { display: grid; grid-template-columns: minmax(160px, .33fr) minmax(0, 1fr); column-gap: clamp(2rem, 8vw, 10rem); padding: clamp(2.2rem, 5vw, 5rem) var(--pad); border-top: 1px solid #dce1eb; }
 .about-label { margin: 0; color: #69769a; font-size: clamp(.82rem, 1vw, .98rem); line-height: 1.2; }
@@ -153,12 +157,24 @@ body[data-page="about"] .site-header { border-bottom: 0; background: #fff; }
 .about-record__entry { padding: 0 0 clamp(1.9rem, 3.5vw, 3.2rem); margin: 0 0 clamp(1.9rem, 3.5vw, 3.2rem); border-bottom: 1px solid #dce1eb; }
 .about-record__entry:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
 .about-record__entry h2 { max-width: 32rem; margin: 0; font: 600 clamp(1.25rem, 2vw, 1.8rem)/1.05 var(--sans); letter-spacing: -.045em; }
+.about-record__role { margin: .5rem 0 0; color: #31416f; font-size: clamp(.88rem, 1.05vw, 1rem); font-weight: 560; line-height: 1.35; }
 .about-record__meta { margin: .48rem 0 1rem; color: #69769a; font-size: .78rem; font-weight: 600; letter-spacing: .025em; }
 .about-record__entry p:last-child { max-width: 46rem; margin: 0; font-size: clamp(.92rem, 1.15vw, 1.04rem); line-height: 1.52; }
+.about-record__highlights { display: grid; gap: .55rem; max-width: 48rem; padding: 0; margin: 1.1rem 0 0; list-style: none; }
+.about-record__highlights li { position: relative; padding-left: 1rem; font-size: clamp(.9rem, 1.1vw, 1rem); line-height: 1.48; }
+.about-record__highlights li::before { position: absolute; left: 0; color: #a3ad48; content: '✦'; font-size: .7rem; line-height: 1.7; }
 .about-record--last { padding-bottom: clamp(4rem, 8vw, 8rem); }
+.about-record--education { padding-bottom: clamp(3.2rem, 6vw, 6rem); }
 .about-record__list--compact { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.4rem, 3vw, 3rem); max-width: none; }
 .about-record__list--compact .about-record__entry { padding: 0; margin: 0; border: 0; }
 .about-record__list--compact .about-record__entry h2 { font-size: clamp(1.15rem, 1.55vw, 1.45rem); }
+.about-gallery { padding: 0 0 clamp(4rem, 8vw, 8rem); border-top: 1px solid #dce1eb; }
+.about-gallery__header { display: grid; grid-template-columns: minmax(160px, .33fr) minmax(0, 1fr); column-gap: clamp(2rem, 8vw, 10rem); padding: clamp(2.2rem, 5vw, 5rem) var(--pad); }
+.about-gallery__header > p:last-child { max-width: 32rem; margin: 0; color: #31416f; font-size: clamp(.95rem, 1.25vw, 1.1rem); line-height: 1.45; }
+.about-gallery__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); width: 100%; gap: 1px; }
+.about-gallery__item { position: relative; min-width: 0; aspect-ratio: 1; margin: 0; overflow: hidden; margin: 3%; border-radius: 15px; }
+.about-gallery__item img { width: 100%; height: 100%; object-fit: cover; }
+.about-gallery__item figcaption { position: absolute; right: .55rem; bottom: .45rem; color: #08155a; font-size: .58rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 
 .detail { max-width: 1440px; padding: 2rem var(--pad) 0; margin: 0 auto; }
 .back-link { display: inline-block; margin-bottom: clamp(3rem, 7vw, 7rem); font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
@@ -234,12 +250,16 @@ body[data-page="about"] .site-header { border-bottom: 0; background: #fff; }
   .page-doodle { min-height: 300px; border-top: var(--border); border-left: 0; }
   .about-nameplate { grid-template-columns: minmax(0, 1fr); min-height: auto; padding: 3.2rem var(--pad) 4rem; }
   .about-nameplate h1 { font-size: clamp(3.8rem, 16vw, 6.2rem); }
-  .about-nameplate__portrait { justify-self: end; width: min(64vw, 270px); margin-top: 2.7rem; }
+  .about-nameplate__media { justify-self: end; width: min(100%, 510px); margin-top: 2.7rem; }
+  .about-nameplate__portrait--primary { margin-top: 1.75rem; }
+  .about-nameplate__portrait--secondary { margin-bottom: 1.75rem; }
   .about-introduction,
   .about-record { grid-template-columns: minmax(0, 1fr); row-gap: 1.65rem; padding: 2.6rem var(--pad); }
   .about-introduction__lead { max-width: 25ch; }
   .about-record__list--compact { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
   .about-record--last { padding-bottom: 4.5rem; }
+  .about-gallery__header { grid-template-columns: minmax(0, 1fr); row-gap: 1.65rem; padding: 2.6rem var(--pad); }
+  .about-gallery__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .detail { padding-top: 1.5rem; }
   .detail-layout { grid-template-columns: 1fr; gap: 2.5rem; }
   .detail-media { height: 85vw; }

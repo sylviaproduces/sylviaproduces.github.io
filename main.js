@@ -1,4 +1,4 @@
-import { site, projects, caseStudies, posts, findBySlug, featuredCases, featuredPosts } from "./content.js";
+import { site, aboutGallery, projects, caseStudies, posts, findBySlug, featuredCases, featuredPosts } from "./content.js";
 
 const body = document.body;
 const base = body.dataset.base || "";
@@ -44,7 +44,7 @@ function chrome() {
   if (footer) footer.innerHTML = `
     <div class="footer__orbit" aria-hidden="true"><span>LET’S WORK TOGETHER · LET’S WORK TOGETHER · </span></div>
     <div class="footer__grid">
-      <div><p class="eyebrow">Available for</p><p class="footer__availability">Select production & operations collaborations.</p></div>
+      <div><p class="eyebrow">Available for</p><p class="footer__availability">Production & Operations</p></div>
       <div><p class="eyebrow">Based in</p><p>${site.location}</p></div>
       <div><p class="eyebrow">Find Sylvia</p><div class="footer__links">${site.social.map((item) => `<a href="${item.href}" target="${item.href.startsWith("http") ? "_blank" : "_self"}" rel="noreferrer">${item.label} ↗</a>`).join("")}</div></div>
     </div>
@@ -71,6 +71,12 @@ function renderCollections() {
   if (caseGrid) caseGrid.innerHTML = (body.dataset.limit === "all" ? caseStudies : featuredCases()).map((item) => card(item, "case study")).join("");
   if (projectGrid) projectGrid.innerHTML = projects.map((item) => card(item, "project")).join("");
   if (postGrid) postGrid.innerHTML = (body.dataset.limit === "all" ? posts : featuredPosts()).map((item) => card(item, "article")).join("");
+}
+
+function renderAboutGallery() {
+  const gallery = document.querySelector("[data-about-gallery]");
+  if (!gallery) return;
+  gallery.innerHTML = aboutGallery.map((item, index) => `<figure class="about-gallery__item about-gallery__item--${index + 1}"><img src="${escapeHtml(route(item.src))}" alt="${escapeHtml(item.alt)}" loading="lazy"><figcaption>${escapeHtml(item.label)}</figcaption></figure>`).join("");
 }
 
 function factList(facts = []) {
@@ -134,6 +140,7 @@ function setupHeroMedia() {
 chrome();
 setupHeroMedia();
 renderCollections();
+renderAboutGallery();
 renderDetail();
 setupMenu();
 setupReveals();
