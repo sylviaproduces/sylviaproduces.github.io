@@ -137,6 +137,18 @@ function setupHeroMedia() {
   heroImage.alt = site.heroMedia.alt;
 }
 
+function setupCaseStudyNavigation() {
+  const toc = document.querySelector("[data-case-toc]");
+  const sections = [...document.querySelectorAll("[data-case-section]")];
+  if (!toc || !sections.length) return;
+  const links = [...toc.querySelectorAll('a[href^="#"]')];
+  const setActive = (id) => links.forEach((link) => link.classList.toggle("is-active", link.getAttribute("href") === `#${id}`));
+  const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+    if (entry.isIntersecting) setActive(entry.target.id);
+  }), { rootMargin: "-22% 0px -66% 0px", threshold: 0.01 });
+  sections.forEach((section) => observer.observe(section));
+}
+
 chrome();
 setupHeroMedia();
 renderCollections();
@@ -144,3 +156,4 @@ renderAboutGallery();
 renderDetail();
 setupMenu();
 setupReveals();
+setupCaseStudyNavigation();

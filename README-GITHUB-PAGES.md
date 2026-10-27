@@ -19,4 +19,3 @@ This folder contains the complete static website. It is ready to deploy without 
 - `.nojekyll` and `manus-routes.json`
 
 `package.json`, development scripts, Git metadata, and local build artifacts are intentionally excluded because GitHub Pages serves this site as static files.
-
